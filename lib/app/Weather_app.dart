@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterproject/menu/weather_temperature.dart';
+import 'package:flutterproject/menu/weather_menu.dart';
 
 class WeatherApp extends StatelessWidget {
   const WeatherApp({super.key});
@@ -8,7 +8,7 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'MyMeteo',
-      home: WeatherTemperature(30),
+      home: WeatherMenu(),
     );
   }
 }
