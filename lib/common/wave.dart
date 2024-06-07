@@ -27,7 +27,8 @@ class Wave extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return WaveWidget(
+    return RotatedBox(quarterTurns: 2,
+      child: WaveWidget(
         config: CustomConfig(
           colors: _colors,
           durations: _durations,
@@ -36,6 +37,7 @@ class Wave extends StatelessWidget {
         backgroundColor: _backgroundColor,
         size: const Size(double.infinity, double.infinity),
         waveAmplitude: 0,
-      );
+      )
+    );
   }
 }
